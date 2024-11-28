@@ -12,9 +12,9 @@ import java.sql.SQLException;
 public class ConexaoMysql implements Conexao{
     
     private Connection connection;
-    private final String URL = "jdbc:mysql://localhost/studio_grafica?useTimezone=true&serverTimezone=America/Recife";
-    private final String USER = "root";
-    private final String PASSWORD = "12345678";
+    private  String URL = "jdbc:mysql://localhost:3306/gestaografica?useTimezone=true&serverTimezone=America/Recife";
+    private  String USER = "root";
+    private  String PASSWORD = "12345678";
 
     @Override
     public Connection obterConexao() throws SQLException {

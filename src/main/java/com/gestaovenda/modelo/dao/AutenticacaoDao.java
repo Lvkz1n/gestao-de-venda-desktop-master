@@ -1,4 +1,3 @@
-
 package com.gestaovenda.modelo.dao;
 
 import com.gestaovenda.modelo.entidades.PERFIL;
@@ -38,17 +37,19 @@ public class AutenticacaoDao {
     }
 
     public Usuario login(LoginDto login) {
-        Usuario usuario = usuarioDao.buscarUsuarioPeloUsername(login.getUsername());
-        
-        if(usuario == null || !usuario.isEstado()) 
-            return null;
-       
-        if(usuario.isEstado() && validaSenha(usuario.getSenha(), login.getSenha())) {
-            usuarioDao.actualizarUltimoLogin(usuario);
-            return usuario;
-        }
+    Usuario usuario = usuarioDao.buscarUsuarioPeloUsername(login.getUsername());
+    
+    if (usuario == null || !usuario.isEstado()) {
         return null;
     }
+    
+    // Verifica a senha diretamente, sem criptografia (não seguro)
+    if (usuario.isEstado() && usuario.getSenha().equals(login.getSenha())) {
+        usuarioDao.actualizarUltimoLogin(usuario);
+        return usuario;
+    }
+    return null;
+}
     
 //    private boolean validaSenha(String usuarioSenha, String loginSenha) {
 //        return usuarioSenha.equals(loginSenha);

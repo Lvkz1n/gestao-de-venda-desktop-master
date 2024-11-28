@@ -69,6 +69,11 @@ public class LoginForm extends javax.swing.JFrame {
 
         botaoLoginLogin.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         botaoLoginLogin.setText("Login");
+        botaoLoginLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoLoginLoginActionPerformed(evt);
+            }
+        });
 
         labelLoginMensagem.setBackground(java.awt.Color.white);
         labelLoginMensagem.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
@@ -146,6 +151,10 @@ public class LoginForm extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botaoLoginLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLoginLoginActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botaoLoginLoginActionPerformed
 
     /**
      * @param args the command line arguments

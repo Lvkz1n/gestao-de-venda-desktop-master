@@ -1,6 +1,6 @@
-CREATE DATABASE gestao_venda;
+CREATE DATABASE gestaografica;
 
-USE gestao_venda;
+USE gestaografica;
 
 CREATE TABLE usuario(
 id bigint primary key auto_increment,

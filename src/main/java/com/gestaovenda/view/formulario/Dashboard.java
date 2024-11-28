@@ -1206,7 +1206,7 @@ public class Dashboard extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sistema de gestao de vendas - Luiz & Pedro");
+        setTitle("Sistema de gestao de vendas - Culysoft");
         setBackground(java.awt.Color.white);
 
         jPanel1.setBackground(java.awt.Color.white);
@@ -1281,6 +1281,11 @@ public class Dashboard extends javax.swing.JFrame {
 
         botaoDashboardClientes.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         botaoDashboardClientes.setText("Clientes");
+        botaoDashboardClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoDashboardClientesActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -1395,7 +1400,7 @@ public class Dashboard extends javax.swing.JFrame {
         panelHome.setPreferredSize(new java.awt.Dimension(728, 595));
 
         jPanel5.setBackground(java.awt.Color.white);
-        jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel2.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
         jLabel2.setText("PRODUTOS");
@@ -1427,7 +1432,7 @@ public class Dashboard extends javax.swing.JFrame {
         );
 
         jPanel10.setBackground(java.awt.Color.white);
-        jPanel10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel10.setPreferredSize(new java.awt.Dimension(204, 88));
 
         jLabel4.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
@@ -1443,7 +1448,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel4)
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addContainerGap(82, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(labelHomeCliente)
@@ -1454,13 +1459,13 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
                 .addComponent(labelHomeCliente)
                 .addGap(22, 22, 22))
         );
 
         jPanel11.setBackground(java.awt.Color.white);
-        jPanel11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel11.setPreferredSize(new java.awt.Dimension(204, 88));
 
         jLabel6.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
@@ -1476,7 +1481,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel6)
-                .addContainerGap(89, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(labelHomeVenda)
@@ -1489,7 +1494,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addGap(18, 18, 18)
                 .addComponent(labelHomeVenda, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         labelDashboardBemvidoUsuario.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
@@ -1508,7 +1513,7 @@ public class Dashboard extends javax.swing.JFrame {
                         .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29)
                         .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 87, Short.MAX_VALUE))
+                .addGap(0, 89, Short.MAX_VALUE))
         );
         panelHomeLayout.setVerticalGroup(
             panelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1921,6 +1926,10 @@ public class Dashboard extends javax.swing.JFrame {
     private void txtVendaDescontoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtVendaDescontoActionPerformed
          // TODO add your handling code here:
     }//GEN-LAST:event_txtVendaDescontoActionPerformed
+
+    private void botaoDashboardClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoDashboardClientesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botaoDashboardClientesActionPerformed
 
     /**
      * @param args the command line arguments

@@ -30,7 +30,8 @@ public class UsuarioDao {
     }
 
     private String adicionar(Usuario usuario) {
-        String sql = "INSERT INTO usuario(nome, username, senha, perfil, estado) VALUES (?, ?, ?, ?, ?)";
+        String sql = "SELECT * FROM usuario WHERE usuario = ?";
+
         
         Usuario usuarioTemp = buscarUsuarioPeloUsername(usuario.getUsername());
         
@@ -104,7 +105,7 @@ public class UsuarioDao {
         
         usuario.setId(result.getLong("id"));
         usuario.setNome(result.getString("nome"));
-        usuario.setUsername(result.getString("username"));
+        usuario.setUsername(result.getString("usuario"));
         usuario.setPerfil(PERFIL.valueOf(result.getString("perfil")));
         usuario.setSenha(result.getString("senha"));
         usuario.setEstado(result.getBoolean("estado"));
@@ -132,7 +133,7 @@ public class UsuarioDao {
     }
     
     public Usuario buscarUsuarioPeloUsername(String username) {
-        String sql = "SELECT * FROM usuario WHERE username = ?";
+        String sql = "SELECT * FROM usuario WHERE usuario = ?";
         
         try {
             PreparedStatement preparedStatement = conexao.obterConexao().prepareStatement(sql);
