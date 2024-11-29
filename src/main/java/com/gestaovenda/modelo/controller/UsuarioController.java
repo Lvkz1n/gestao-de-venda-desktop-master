@@ -39,7 +39,7 @@ public class UsuarioController implements ActionListener, MouseListener, KeyList
         actualizarTabelaUsuario(usuarioDao.todosUsuarios());
     }
 
-    @Override
+    
     public void actionPerformed(ActionEvent ae) {
         String accao = ae.getActionCommand().toLowerCase();
         

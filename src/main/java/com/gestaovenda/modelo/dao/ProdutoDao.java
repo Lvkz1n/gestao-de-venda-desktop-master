@@ -84,7 +84,6 @@ public class ProdutoDao {
             return resultado == 1 ? "Quantidade do produto editado com sucesso" : "Nao foi possivel editar quantidade do produto";
             
         } catch (SQLException e) {
-            e.printStackTrace();
             return String.format("Error: %s", e.getMessage());
         }
     }
@@ -111,7 +110,6 @@ public class ProdutoDao {
                 produtos.add(getProduto(result));
             }
         } catch (SQLException e) {
-            e.printStackTrace();
             System.out.println(String.format("Error: %s", e.getMessage()));
         }
         return produtos;

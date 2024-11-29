@@ -31,12 +31,12 @@ import javax.swing.JOptionPane;
  */
 public class ProdutoController implements ActionListener, MouseListener, KeyListener {
     
-    private final Conexao conexao;
-    private final Dashboard dashboard;
-    private final AutenticacaoDao autenticacaoDao;
-    private final UsuarioDao usuarioDao;
-    private final CategoriaDao categoriaDao;
-    private final ProdutoDao produtoDao;
+    private Conexao conexao;
+    private Dashboard dashboard;
+    private AutenticacaoDao autenticacaoDao;
+    private UsuarioDao usuarioDao;
+    private CategoriaDao categoriaDao;
+    private ProdutoDao produtoDao;
     private ProdutoTableModel produtoTableModel;
     private Produto produto;
    

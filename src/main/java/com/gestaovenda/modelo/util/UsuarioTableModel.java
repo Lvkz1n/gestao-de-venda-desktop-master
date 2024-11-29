@@ -45,11 +45,13 @@ public class UsuarioTableModel extends AbstractTableModel {
         }
     }
 
+    
     @Override
     public String getColumnName(int column) {
         return colunas[column];
     }
 
+    
     @Override
     public boolean isCellEditable(int rowIndex, int columnIndex) {
         return false; 

@@ -48,10 +48,5 @@ public class ClienteTableModel extends AbstractTableModel{
     @Override
     public String getColumnName(int column) {
         return colunas[column];
-    }
-
-    
-    
-    
-    
+    }  
 }

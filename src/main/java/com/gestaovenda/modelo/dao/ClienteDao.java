@@ -124,11 +124,11 @@ public class ClienteDao {
     }
     
     public String deleteClientePeloId(Long id) {
-        String sql = String.format("DELETE FROM cliente WHERE id = %d", id);
+        String sql = "DELETE FROM cliente WHERE id = ?";
         
         try {
             PreparedStatement preparedStatement = conexao.obterConexao().prepareStatement(sql);
-            
+            preparedStatement.setLong(1, id);
             int resultado = preparedStatement.executeUpdate();
             
             return resultado == 1 ? "Cliente apagado com sucesso" : "Nao foi possivel apagar cliente";

@@ -1206,7 +1206,7 @@ public class Dashboard extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sistema de gestao de vendas - Culysoft");
+        setTitle("Sistema de gestao de vendas - Luiz & Pedro");
         setBackground(java.awt.Color.white);
 
         jPanel1.setBackground(java.awt.Color.white);
